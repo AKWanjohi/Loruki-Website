@@ -199,6 +199,24 @@ nav {
   transform: translateY(-15px);
 }
 
+/* Footer */
+.footer {
+  height: 200px;
+}
+
+.footer nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .social a {
+  margin: 0 10px;
+}
+
+.footer a {
+  color: #fff;
+}
+
 /* Utilities */
 .container {
   max-width: 1100px;
