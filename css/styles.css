@@ -105,7 +105,6 @@ nav {
   top: 60px;
   height: 350px;
   padding: 40px;
-  /* justify-self: flex-end; */
   z-index: 1;
 }
 
@@ -323,4 +322,59 @@ nav {
 
 .large {
   font-size: 35px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    text-align: center;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cloud .grid,
+  .cli .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .cli .grid > *:first-child {
+    grid-area: 1 / 1;
+  }
+
+  .footer {
+    height: 300px;
+    text-align: center;
+  }
+
+  .footer .social {
+    margin-bottom: 20px;
+  }
 }
